@@ -1,24 +1,35 @@
 #include <WifiMiniCom.h>
+#include <MqttCom.h>
 #include <DHT.h>
-
-DHT dht(D6, DHT11);
-WifiMiniCom com;
 
 const char *ssid = "Multicampus_9999";
 const char *password = "multi123";
+const char *mqtt_server = "192.168.0.9";
 
+MqttCom com;
+DHT dht11(D6, DHT11);
 
-void check() {
-    float humi = dht.readHumidity();
-    float temp = dht.readTemperature();
+void publish() {
+    char msg[50];
+    float fh, fc;
 
-    com.print(1, "H:", humi, "T:", temp);
+    fh = dht11.readHumidity(); // 습도 측정
+    fc = dht11.readTemperature(); // 섭씨 온도 측정
+
+    if (isnan(fh) || isnan(fc)) { // 측정 실패시에는 출력없이 리턴
+        Serial.println("DHT11 read failed!!");
+        return;
+    }
+
+    com.publish("iot/livingroom/temp", fc);
+    com.publish("iot/livingroom/humi", fh);
 }
 
 void setup() {
     com.init(ssid, password);
-    com.setInterval(2000, check);
-    dht.begin();
+    com.setServer(mqtt_server, NULL, NULL);
+    com.setInterval(2000, publish);
+    dht11.begin();
 }
 
 void loop() {

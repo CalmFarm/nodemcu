@@ -1,6 +1,6 @@
-c:\IOT\nodemcu\build\libraries\Led\Led.cpp.o: \
- C:\Users\khs\Documents\Arduino\libraries\Led\Led.cpp \
- C:\Users\khs\Documents\Arduino\libraries\Led\Led.h \
+c:\IOT\nodemcu\build\libraries\DHT-sensor-library\DHT.cpp.o: \
+ C:\Users\khs\Documents\Arduino\libraries\DHT-sensor-library\DHT.cpp \
+ C:\Users\khs\Documents\Arduino\libraries\DHT-sensor-library\DHT.h \
  C:\Users\khs\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/Arduino.h \
  C:\Users\khs\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/stdlib_noniso.h \
  C:\Users\khs\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/binary.h \

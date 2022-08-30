@@ -41,13 +41,18 @@
   },
   {
     "Sourcefile": "c:\\IOT\\nodemcu\\build\\sketch\\app.ino.cpp",
+    "Include": "MqttCom.h",
+    "Includepath": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\MqttCom"
+  },
+  {
+    "Sourcefile": "c:\\IOT\\nodemcu\\build\\sketch\\app.ino.cpp",
     "Include": "PubSubClient.h",
     "Includepath": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\PubSubClient\\src"
   },
   {
     "Sourcefile": "c:\\IOT\\nodemcu\\build\\sketch\\app.ino.cpp",
-    "Include": "Led.h",
-    "Includepath": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\Led"
+    "Include": "DHT.h",
+    "Includepath": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\DHT-sensor-library"
   },
   {
     "Sourcefile": "c:\\IOT\\nodemcu\\build\\sketch\\app.ino.cpp",
@@ -160,12 +165,32 @@
     "Includepath": null
   },
   {
+    "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\MqttCom\\MqttCom.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
     "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\PubSubClient\\src\\PubSubClient.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\Led\\Led.cpp",
+    "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\DHT-sensor-library\\DHT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\DHT-sensor-library\\DHT_U.cpp",
+    "Include": "Adafruit_Sensor.h",
+    "Includepath": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\Adafruit_Sensor"
+  },
+  {
+    "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\DHT-sensor-library\\DHT_U.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\khs\\Documents\\Arduino\\libraries\\Adafruit_Sensor\\Adafruit_Sensor.cpp",
     "Include": "",
     "Includepath": null
   }

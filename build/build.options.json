@@ -8,5 +8,5 @@
   "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware,C:\\Users\\khs\\AppData\\Local\\Arduino15\\packages",
   "otherLibrariesFolders": "C:\\Users\\khs\\Documents\\Arduino\\libraries",
   "runtime.ide.version": "10819",
-  "sketchLocation": "c:\\IOT\\nodemcu\\mqtt01\\app.ino"
+  "sketchLocation": "c:\\IOT\\nodemcu\\dht\\app.ino"
 }
